@@ -46,7 +46,7 @@ function renderQuiz() {
     const container = document.getElementById('quizContainer');
     if (!container) return;
 
-    let html = `<a href="map.html" class="home-link">← Back to map</a><h1>Plate Tectonics Quiz</h1>`;
+    let html = `<a href="index.html" class="home-link">← Back to map</a><h1>Plate Tectonics Quiz</h1>`;
 
     // Multiple Choice
     html += `<h2>Multiple Choice (${quizData.multipleChoice.length} questions)</h2>`;
@@ -226,7 +226,7 @@ function evaluateQuiz() {
     });
     resultHtml += `</ul>
         <button id="restartQuizBtn" class="submit-btn">Try Again</button>
-        <a href="map.html" class="home-link" style="display: inline-block; margin-left: 10px;">Back to Map</a>
+        <a href="index.html" class="home-link" style="display: inline-block; margin-left: 10px;">Back to Map</a>
     </div>`;
 
     // Replace quiz content with results
