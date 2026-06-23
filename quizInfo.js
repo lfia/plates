@@ -8,18 +8,13 @@ const quizData = {
             points: 1
         },
         {
-            text: "Which tectonic plate is subducting beneath the South American Plate at the Chilean subduction zone?",
+            text: "Which tectonic plate is subducting beneath the Mariana Plate at the Mariana Trench?",
             options: ["Pacific Plate", "Nazca Plate", "Juan de Fuca Plate", "African Plate"],
-            correct: "Nazca Plate",
+            correct: "Pacific Plate",
             points: 1
         },
     ],
     shortAnswer: [
-        {
-            text: "Name the deepest oceanic trench on Earth.",
-            correct: ["mariana trench", "the mariana trench", "mariana", "the mariana"],
-            points: 1
-        },
         {
             text: "Which mountain range was formed by the collision of the Indian Plate and the Eurasian Plate?",
             correct: ["himalayas", "the himalayas", "himalaya", "the himalaya"],
