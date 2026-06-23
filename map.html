@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesting Plate Boundaries</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="mapStyle.css" rel="stylesheet">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div class="header-left">
+                Interesting Plate Boundaries
+            </div>
+            <div class="header-right">
+                <a href="#" onclick='showPopup(about); return false;'>About</a>
+                <a href="#" onclick="showPopup(credits); return false;">Credits</a>
+                <a href="quiz.html">Quiz me!</a>
+            </div>
+        </header>
+        
+        <div id="worldMap"></div>
+
+        <div class="info-overlay" id="infoOverlay">
+            <div class="popup" id="popup">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <div class="popup-img-div">
+                    <img class="popup-img" id="popupImg" src="" alt="" style="display:none;">
+                    <img class="popup-img2" id="popupImg2" src="" alt="" style="display:none;">
+                </div>
+                <div class="popup-body">
+                    <p class="popup-location" id="popupLocation"></p>
+                    <h3 class="popup-title" id="popupTitle"></h3>
+                    <p class="popup-desc" id="popupDesc"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-overlay" id="imgOverlay">
+            <div class="img-popup" id="imgPopup">
+                <button class="close-btn" id="imgCloseBtn">&times;</button>
+                <img class="full-img" id="fullImg" src="" alt="">
+            </div>
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="mapInfo.js"></script>
+        
+
+    </body>
+
+
+
+</html>
