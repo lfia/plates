@@ -60,16 +60,7 @@ document.getElementById('infoOverlay').addEventListener('click', function(e) {
         this.style.display = 'none';
     }
 });
-// Info info data data yay
-const chileData = {
-    location: 'Off the coast of Chile, South Pacific Ocean',
-    title: 'The Chilean Subduction Zone',
-    desc: 'The Chilean subduction zone is a convergent plate boundary where the Nazca Plate is being subducted beneath the South American Plate. This region is known for its high seismic activity, including some of the largest earthquakes ever recorded, such as the 1960 Valdivia earthquake. The subduction process also leads to volcanic activity and the formation of the Andes mountain range.',
-    img: 'img/Santiago.JPG',
-    alt: 'Santiago, Chile with the Andes mountains in the background',
-    img2: 'img/ChileDiagram.png',
-    alt2: 'Diagram of the Chilean subduction zone and its relation to the South American continent'
-};
+// Info info data data 
 const atlanticData = {
     location: 'Mid-Atlantic Ocean',
     title: 'The Mid-Atlantic Ridge',
@@ -177,8 +168,6 @@ fetch(tectonicPlatesUrl)
             fillOpacity: 1,
             className: 'circle-style'
         };
-        L.circleMarker([-29.5588, -72.8514], circleStyle).addTo(map)
-            .bindPopup(`<b>Chilean Subduction Zone</b><br><a href="#" onclick='showPopup(${JSON.stringify(chileData)}); return false;'>Learn more</a>`);
         
         L.circleMarker([27.6965, -44.1492], circleStyle).addTo(map)
             .bindPopup(`<b>Mid-Atlantic Ridge</b><br><a href="#" onclick='showPopup(${JSON.stringify(atlanticData)}); return false;'>Learn more</a>`);
