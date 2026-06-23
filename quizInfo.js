@@ -58,7 +58,7 @@ function renderQuiz() {
     });
 
     // Short Answer
-    html += `<h2>Short Answer (${quizData.shortAnswer.length} questions)</h2>`;
+    html += `<h2>Short Answer (${quizData.shortAnswer.length} question)</h2>`;
     quizData.shortAnswer.forEach((q, i) => {
         html += `
             <div class="quiz-question" data-qidx="${i}" data-type="sa">
