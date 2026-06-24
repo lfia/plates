@@ -132,7 +132,7 @@ const credits = {
         zoom: 3,
         maxBounds: [[-90, -180], [90, 180]],
         maxBoundsViscosity: 0.8,
-        minZoom: 3
+        minZoom: 2
     });
 // Map provided by OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
